@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jordan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--j query cdn above-->
+    <div id="animation">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+        <img src="./assets/bubble_blue.png" alt="bubble error">
+    </div> <!--animation div close tag-->
+    <div class="container">
+        <section class="home">
+            <div class="title-box">
+                <div class="image"><img src="./assets/me.jpg" alt="profile picture"></div>
+                
+                <h1>Jordan M.R</h1>
+                <h2>Web Developer</h2>
+                <h3>Check me out on <a href="https://uk.linkedin.com/in/jordan-montford-robinson-65a77a17a">Linkedin</a> </h3>
+            </div>
+        </section>
+        <section class="cv">
+            <div class="content-box">
+                <h1>CV</h1>
+                <p>Currently I am studying an undergraduate’s degree in Computer Science at the University of Kent. At present I am working as part time staff member at the a café called Dolche Vita on the University of Kent campus. In my personal time I teach myself Web development and Japanese. At the moment I have skill level of front end web developer and learning back end web development.
+
+                </p> 
+                <p>
+                    Technical Skills<br>
+                    Knowledge of HTML, CSS, XHTML, JavaScript, PHP, MYSQL, JAVA.<br>
+                    Experience with design pattern, frameworks and architecture.<br>
+                    Working knowledge of SQL<br>
+                    Experience making responsive front end web development.
+                </p>
+            </div>
+        </section>
+       <!-- TEMPLATE FOR PORFOLIO PAGES
+           <section class="portfolio">
+            <div class="content-box">
+                <h1>PlaceHolder One</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, necessitatibus?</h2>
+                <img src="/assets/screenshot.png" alt="demo one image">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet cumque, ut porro vero veritatis velit fugiat recusandae in vel eveniet!</p>
+            </div> -->
+        </section>
+        <section class="portfolio" id="custom"></section>
+        <section class="portfolio" id="weather-page"></section>
+        <section class="portfolio" id="fund"></section>
+        <section class="portfolio" id="body"></section>
+        
+        <footer>
+            <p>Get in touch on <a href="https://uk.linkedin.com/in/jordan-montford-robinson-65a77a17a">Linkedin</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        //loading the portfolio pages in.
+            $(document).ready(function(){
+               
+               $('#custom').load("custom_build.html");
+               $('#weather-page').load("weather.html");
+               $('#fund').load("fund.html");
+               $('#body').load("body.html");
+            });
+            </script>
+</body>
+</html>

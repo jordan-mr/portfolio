@@ -1,0 +1,227 @@
+/* google font */
+body {
+    font-family: 'Lora', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+   }
+/* google font END*/
+body{
+    animation: bg-gradient 40s infinite;
+    background-image: linear-gradient(to right,rgb(202, 202, 202), rgba(250, 250, 250,1), rgb(206, 206, 206));
+    background-repeat:no-repeat;
+    background-size: 120%;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+.title-box{
+    padding: 10px;
+    position: fixed;
+    width:250px;
+    margin:auto;
+    margin-top: 150px;
+    height:350px;
+    text-align: center;
+    background-color: #518eef; 
+    border-radius: 5px;
+    color:#fff;
+    vertical-align: middle;
+    box-shadow: 7px 7px 1px 2px rgba(0,0,0, 0.4);
+}
+.title-box h1{
+    margin: 10px;
+    padding-top:0px;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+.title-box h2{
+    font-size:18px;
+}
+.title-box h3{
+    font-size:16px;
+}
+
+.title-box .image{
+    margin: auto;
+    margin-top: 10px;
+    width:200px;
+    height: 200px;
+    border-radius:50%;
+    overflow: hidden;
+}
+.title-box img{
+    width: 300px;
+
+}
+
+.content-box{
+    width:60%;
+    margin: auto auto auto auto;
+    float: right;
+    margin-top: 150px;
+    padding: 10px;
+    height:auto;
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.5); 
+    border-radius: 5px;
+    color:#000;
+    vertical-align: middle;
+    box-shadow: 7px 7px 1px 2px rgba(0,0,0, 0.4); 
+}
+.content-box h1{
+    margin-top:50px;
+
+}
+
+.cv p{
+    margin: 30px 50px;
+}
+
+.portfolio img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.portfolio h2{
+    width:80%;
+    margin:auto;
+    margin-bottom: 10px;
+    font-size:16px;
+}
+
+.portfolio p{
+    width:60%;
+    margin:auto;
+    margin-top:15px;
+}
+
+footer{
+    clear: both;
+    margin: 10px;
+    height:100px;
+    text-align: center;
+}
+
+footer p{
+    padding-top:50px;
+}
+
+/* background triangles */
+#animation{
+    position: fixed;
+    z-index: -1;
+    width:100vw;
+    height:100vh;
+}
+
+#animation img:nth-child(1){
+    animation: bg-bubbles 10s infinite;
+    position: absolute;
+    width:10%;
+}
+#animation img:nth-child(2){
+    animation: bg-bubbles 6s 2s infinite;
+    position: absolute;
+    width:4%;
+    left:20%;
+}
+#animation img:nth-child(3){
+    animation: bg-bubbles 7s 1s infinite;
+    position: absolute;
+    width:7%;
+    left:40%;
+}
+#animation img:nth-child(4){
+    animation: bg-bubbles 25s 1.5s infinite;
+    position: absolute;
+    width:15%;
+    left:60%;
+}
+#animation img:nth-child(5){
+    animation: bg-bubbles 20s 0.5s infinite;
+    position: absolute;
+    width:20%;
+    left:80%;
+}
+#animation img:nth-child(6){
+    animation: bg-bubbles 5s 0.2s infinite;
+    position: absolute;
+    width:2%;
+    left:50%;    
+}
+
+@keyframes bg-bubbles{
+    0%{
+        top:100vh;
+        transform: rotate(0deg);
+    }
+    100%{
+        top:-100vh;
+        transform: rotate(700deg);
+    }
+}
+@keyframes bg-bubbles2{
+    0%{
+        top:100vh;
+    }
+    100%{
+        top:-100vh;
+    }
+}
+
+/* background animation */
+@keyframes bg-gradient{
+    from { background-position: 0 0; }
+    50%{
+        background-position: 100% 0;
+    }
+	to { background-position: 0 0; }
+}
+
+/*MOBILE SITE */
+@media only screen and (max-width: 777px){
+    .title-box{
+        position: inherit;
+        width:60%;
+        margin:auto;
+        margin-top: 150px;
+        height:auto;
+        text-align: center;
+        background-color: #518eef; 
+        border-radius: 5px;
+        color:#fff;
+        vertical-align: middle;
+        /*box-shadow: 0px 12px 10px 8px rgba(255,255,255, 0.6); */
+    }
+    .content-box{
+        width:75%;
+        margin: auto;
+        margin-top: 150px;
+        float: none;
+    }
+}
+
+
+/* super small screens */
+@media only screen and (max-width: 400px){
+    .title-box img{
+        width: 150px;
+    
+    }
+
+    .title-box .image{
+        margin: auto;
+        margin-top: 10px;
+        width:100px;
+        height: 100px;
+        border-radius:100%;
+        overflow: hidden;
+    }
+
+}
